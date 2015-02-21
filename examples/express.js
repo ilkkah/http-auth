@@ -14,7 +14,7 @@ app.use(auth.connect(basic));
 
 // Setup route.
 app.get('/', function(req, res){
-  res.send("Hello from express - " + req.user + "!");
+  res.send("Hello from express - " + req.httpauth + "!");
 });
 
 // Start server.

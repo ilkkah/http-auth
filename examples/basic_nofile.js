@@ -12,7 +12,7 @@ var basic = auth.basic({
 
 // Creating new HTTP server.
 http.createServer(basic, function(req, res) {
-	res.end("Welcome to private area - " + req.user + "!");
+	res.end("Welcome to private area - " + req.httpauth + "!");
 }).listen(1337);
 
 // Log URL.

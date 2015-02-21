@@ -28,7 +28,7 @@ var basic = auth.basic({
 
 // Creating new HTTP server.
 http.createServer(basic, function(req, res) {
-	res.end("Welcome to private area - " + req.user + "!");
+	res.end("Welcome to private area - " + req.httpauth + "!");
 }).listen(1337);
 
 ```
@@ -45,7 +45,7 @@ var basic = auth.basic({
 
 // Creating new HTTP server.
 http.createServer(basic, function(req, res) {
-	res.end("Welcome to private area - " + req.user + "!");
+	res.end("Welcome to private area - " + req.httpauth + "!");
 }).listen(1337);
 ```	
 ## [express framework](http://expressjs.com/) integration
@@ -63,7 +63,7 @@ app.use(auth.connect(basic));
 
 // Setup route.
 app.get('/', function(req, res){
-  res.send("Hello from express - " + req.user + "!");
+  res.send("Hello from express - " + req.httpauth + "!");
 });
 ```
 ## [http-proxy](https://github.com/nodejitsu/node-http-proxy/) integration
@@ -98,7 +98,7 @@ http.createServer(function (req, res) {
  - `msg401` - Message for failed authentication 401 page.
  - `msg407` - Message for failed authentication 407 page.
  - `contentType` - Content type for failed authentication page.
- - `skipUser` - Set this to **true**, if you don't want req.user to be filled with authentication info.
+ - `skipUser` - Set this to **true**, if you don't want req.httpauth to be filled with authentication info.
 
 ## Running tests
 

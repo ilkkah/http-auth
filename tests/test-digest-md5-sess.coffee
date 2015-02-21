@@ -19,7 +19,7 @@ module.exports =
 
     # Creating new HTTP server.
     @server = http.createServer digest, (req, res) ->
-      res.end "Welcome to private area - #{req.user}!"    
+      res.end "Welcome to private area - #{req.httpauth}!"    
     # Start server.
     @server.listen 1337    
     callback()

@@ -24,7 +24,7 @@ var digest = auth.digest({
 
 // Creating new HTTP server.
 http.createServer(digest, function(req, res) {
-	res.end("Welcome to private area - " + req.user + "!");
+	res.end("Welcome to private area - " + req.httpauth + "!");
 }).listen(1337);
 
 // Log URL.

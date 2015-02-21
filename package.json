@@ -1,5 +1,5 @@
 {
-	"name": "http-auth",
+	"name": "ilkkah-http-auth",
 	"description": "Node.js package for HTTP basic and digest access authentication.",
 	"version": "2.2.5",
 	"author": "Gevorg Harutyunyan (http://github.com/gevorg)",
@@ -12,17 +12,17 @@
 	"homepage": "http://http-auth.info",
 	"repository": {
 		"type": "git",
-		"url": "http://github.com/gevorg/http-auth.git"
+		"url": "http://github.com/ilkkah/http-auth.git"
 	},
 	"main": "./lib/http-auth.js",
 	"licenses": [
 		{
 			"type": "MIT",
-			"url": "http://github.com/gevorg/http-auth/blob/master/LICENSE"
+			"url": "http://github.com/ilkkah/http-auth/blob/master/LICENSE"
 		}
 	],
 	"bugs": {
-		"url": "http://github.com/gevorg/http-auth/issues"
+		"url": "http://github.com/ilkkah/http-auth/issues"
 	},
 	"dependencies": {
 		"coffee-script": "1.8.0",

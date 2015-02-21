@@ -22,7 +22,7 @@ module.exports =
 
     # Creating new HTTP server.
     @server = http.createServer basic, (req, res) ->
-      res.end "req.user is #{req.user}!"
+      res.end "req.httpauth is #{req.httpauth}!"
 
     # Start server.
     @server.listen 1337
@@ -37,7 +37,7 @@ module.exports =
   # Correct plain details.
   testSuccessPlain: (test) ->
     callback = (error, response, body) -> # Callback.
-      test.equals body, "req.user is undefined!"
+      test.equals body, "req.httpauth is undefined!"
       test.done()
 
     # Test request.

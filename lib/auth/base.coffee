@@ -64,7 +64,7 @@ class Base
       if not result.user # Asking for authentication.
         @ask res, result
       else # Apply default listener.
-        req.user = result.user if not @options.skipUser
+        req.httpauth = result.user if not @options.skipUser
         (callback.apply this, [req, res]) if callback
             
 # Exporting.

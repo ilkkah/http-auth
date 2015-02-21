@@ -22,7 +22,7 @@ module.exports =
     
     # Setup route.
     app.get '/', (req, res) ->
-      res.send "Hello from express - #{req.user}!"
+      res.send "Hello from express - #{req.httpauth}!"
     # Start server.
     @server = app.listen 1337
     callback()
