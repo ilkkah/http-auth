@@ -4,17 +4,16 @@
 [![Build Status](https://api.travis-ci.org/gevorg/http-auth.png)](https://travis-ci.org/gevorg/http-auth)
 [![Dependency Status](https://david-dm.org/gevorg/http-auth.png)](https://david-dm.org/gevorg/http-auth)
 
+## Note: forked 
+
+Forked because `req.user` overlapped with http://passportjs.org
+
 ## Installation
 
-Via git (or downloaded tarball):
-
-```bash
-$ git clone git://github.com/gevorg/http-auth.git
-```
 Via [npm](http://npmjs.org/):
 
 ```bash
-$ npm install http-auth
+$ npm install ilkkah-http-auth
 ```	
 
 ## Basic example
