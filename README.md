@@ -6,7 +6,7 @@
 
 ## Note: forked 
 
-Forked because `req.user` overlapped with http://passportjs.org
+Forked because `req.user` collided with http://passportjs.org
 
 ## Installation
 
